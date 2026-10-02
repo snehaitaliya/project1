@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MY SITE</title>
+    </head>
+    <body>
+        <h1>welcome to the home page</h1>
+    <form method="post">
+        {% csrf_token %}
+        <lable for="username">Username</lable>
+        <input type="text" id="username" name="name" required>
+        <br><br>
+        <lable for="email">Email</lable>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+    </body>
+</html>
